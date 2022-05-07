@@ -1,0 +1,43 @@
+.vx-xs {
+	--vx-size-baseline: 20px;
+	--vx-size-spacing: 5px;
+	--vx-size-text1: 8px;
+	--vx-size-text2: 10px;
+	--vx-size-text3: 12px;
+	--vx-size-text4: 14px;
+}
+.vx-sm {
+	--vx-size-baseline: 30px;
+	--vx-size-spacing: 10px;
+	--vx-size-text1: 10px;
+	--vx-size-text2: 12px;
+	--vx-size-text3: 14px;
+	--vx-size-text4: 16px;
+}
+
+.vx-md {
+	--vx-size-baseline: 40px;
+	--vx-size-spacing: 15px;
+	--vx-size-text1: 12px;
+	--vx-size-text2: 14px;
+	--vx-size-text3: 16px;
+	--vx-size-text4: 18px;
+}
+
+.vx-lg { 
+	--vx-size-baseline: 50px;
+	--vx-size-spacing: 20px;
+	--vx-size-text1: 14px;
+	--vx-size-text2: 16px;
+	--vx-size-text3: 18px;
+	--vx-size-text4: 20px;
+}
+
+.vx-xl { 
+	--vx-size-baseline: 60px;
+	--vx-size-spacing: 25px;
+	--vx-size-text1: 16px;
+	--vx-size-text2: 18px;
+	--vx-size-text3: 20px;
+	--vx-size-text4: 22px;
+}
