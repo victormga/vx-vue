@@ -161,11 +161,13 @@
 .vx-put-center { top: 0; right: 0; bottom: 0; left: 0; margin: auto; }
 
 .vx-background { background: var(--vx-theme-background2); }
+.vx-background-0 { background: var(--vx-theme-background0); }
 .vx-background-1 { background: var(--vx-theme-background1); }
 .vx-background-2 { background: var(--vx-theme-background2); }
 .vx-background-3 { background: var(--vx-theme-background3); }
 .vx-background-4 { background: var(--vx-theme-background4); }
 
+.vx-text-0 { color: var(--vx-theme-color0); }
 .vx-text-1 { color: var(--vx-theme-color1); }
 .vx-text-2 { color: var(--vx-theme-color2); }
 .vx-text-3 { color: var(--vx-theme-color3); }

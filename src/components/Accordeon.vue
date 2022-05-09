@@ -78,7 +78,6 @@ export default class Accordeon extends Vue {
 	text-align: left;
 	font-weight: bold;
 	font-size: var(--vx-size-text2);
-	padding: 0 var(--vx-size-spacing);
 	cursor: pointer;
 }
 

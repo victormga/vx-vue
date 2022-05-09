@@ -36,6 +36,7 @@ export default class Row extends VxVue {
 	display: flex;
 	height: auto;
 	column-gap: var(--vx-size-spacing);
+	flex-wrap: wrap;
 }
 
 </style>

@@ -12,19 +12,26 @@ import VxVue from "../lib/VxVue";
 	name: "Column",
 	props: {
 		theme: { type: String, required: false },
-		flex: { type: String, required: false },
+		size: { type: String, required: false },
 		width: { type: String, required: false },
+		break: { type: String, required: false },
 	},
 })
 export default class Column extends VxVue {
-	declare flex?: string;
+	declare size?: string;
 
 	declare width?: string;
 
+	declare break?: string;
+
 	get _style(): Record<string, unknown> {
-		if (this.flex) return { flex: this.flex };
-		if (this.width) return { "max-width": this.$vx.cssValueFromString(this.width) };
-		return {};
+		const style: Record<string, unknown> = {};
+
+		if (this.size) style.flex = this.size;
+		if (this.width) style["max-width"] = this.$vx.cssValueFromString(this.width);
+		if (this.break) style["min-width"] = this.$vx.cssValueFromString(this.break);
+		
+		return style;
 	}
 }
 </script>

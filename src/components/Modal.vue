@@ -52,8 +52,8 @@ export default class Modal extends VxVue {
 	get _style(): Record<string, unknown> {
 		const style: Record<string, unknown> = {};
 
-		if (this.width) style.width = this.$vx.cssValueFromString(this.width);
-		if (this.height) style.height = this.$vx.cssValueFromString(this.height);
+		if (this.width) style["max-width"] = this.$vx.cssValueFromString(this.width);
+		if (this.height) style["max-height"] = this.$vx.cssValueFromString(this.height);
 
 		return style;
 	}
@@ -68,7 +68,9 @@ export default class Modal extends VxVue {
 .vx-modal {
 	z-index: 99;
 	width: 100%;
+	max-width: 100%;
 	height: 100%;
+	max-height: 100%;
 	top: 0;
 	left: 0;
 	background: #00000066;
@@ -81,6 +83,8 @@ export default class Modal extends VxVue {
 	right: 0;
 	bottom: 0;
 	margin: auto;
+	width: calc(100% - (var(--vx-size-spacing) * 2));
+	height: calc(100% - (var(--vx-size-spacing) * 2));
 }
 
 .vx-elm-modal-close {
