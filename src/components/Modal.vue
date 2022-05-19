@@ -58,6 +58,18 @@ export default class Modal extends VxVue {
 		return style;
 	}
 
+	mounted() {
+		window.addEventListener("keydown", this.bind_keys);
+	}
+
+	beforeUnmount(): void {
+		window.removeEventListener("keydown", this.bind_keys);
+	}
+
+	bind_keys(event: KeyboardEvent): void {
+		if (event.key === "Escape") this.close();
+	}
+
 	close(): void {
 		if (this.$attrs.onClose !== undefined) this.$emit("close");
 	}

@@ -1,6 +1,6 @@
 .vx-primary {
-	--vx-theme-scrollbar-track: #00000000;
-	--vx-theme-scrollbar-thumb: #666666;
+	--vx-theme-scrollbar-track: #363e47;
+	--vx-theme-scrollbar-thumb: #262c32;
 	--vx-theme-background0: #262c32;
 	--vx-theme-background1: #303841;
 	--vx-theme-background2: #363e47;
@@ -18,18 +18,18 @@
 }
 
 .vx-light {
-	--vx-theme-scrollbar-track: #ffffff;
-	--vx-theme-scrollbar-thumb: #f2f7f7;
-	--vx-theme-background0: #a5b5c1;
-	--vx-theme-background1: #c7bcc1;
+	--vx-theme-scrollbar-track: #d6dce1;
+	--vx-theme-scrollbar-thumb: #a5b5c1;
+	--vx-theme-background0: #f2f7f7;
+	--vx-theme-background1: #eeeeee;
 	--vx-theme-background2: #d6dce1;
-	--vx-theme-background3: #a5b5c1;
-	--vx-theme-background4: #f2f7f7;
-	--vx-theme-color0: #303841;
-	--vx-theme-color1: #363e47;
+	--vx-theme-background3: #c7bcc1;
+	--vx-theme-background4: #a5b5c1;
+	--vx-theme-color0: #8d8787;
+	--vx-theme-color1: #6d7177;
 	--vx-theme-color2: #404953;
-	--vx-theme-color3: #6d7177;
-	--vx-theme-color4: #8d8787;
+	--vx-theme-color3: #363e47;
+	--vx-theme-color4: #303841;
 	--vx-theme-disabled: #858383;
 	--vx-theme-success: #1b7a44;
 	--vx-theme-danger: #910b0b;

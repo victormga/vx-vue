@@ -89,10 +89,12 @@ export default class Dropdown extends VxVue {
 			this.show = false;
 		};
 		window.addEventListener("click", this.click_outside);
+		window.addEventListener("keydown", this.bind_keys);
 	}
 
 	beforeUnmount(): void {
 		window.removeEventListener("click", this.click_outside);
+		window.removeEventListener("keydown", this.bind_keys);
 	}
 
 	on_click(): void {
@@ -116,6 +118,10 @@ export default class Dropdown extends VxVue {
 	on_blur(): void {
 		if (!this.hover) return;
 		this.debounce = setTimeout(() => { this.show = false; }, 200);
+	}
+
+	bind_keys(event: KeyboardEvent): void {
+		if (event.key === "Escape") this.show = false;
 	}
 }
 </script>

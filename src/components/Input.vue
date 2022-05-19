@@ -265,6 +265,7 @@ export default class Input extends VxVue {
 	height: var(--vx-size-baseline);
 	line-height: var(--vx-size-baseline);
 	font-size: var(--vx-size-text2);
+	color: var(--vx-theme-color2);
 	opacity: 0.8;
 	transition: all .2s ease-in-out;
 }
@@ -293,6 +294,7 @@ export default class Input extends VxVue {
 	text-align: center;
 	top: 0;
 	left: 0;
+	color: var(--vx-theme-color2);
 }
 .vx-input-inner {
 	position: relative;

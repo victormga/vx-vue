@@ -103,7 +103,7 @@ export default class InputSelect extends VxVue {
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height .1s ease-in-out;
-	background: var(--vx-theme-background4);
+	background: var(--vx-theme-background1);
 }
 .vx-has-background  .vx-input-options {
 	width: calc(100% + (var(--vx-size-spacing) * 2));

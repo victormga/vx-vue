@@ -55,35 +55,4 @@ export default function(app: any /*vue.App<Element>*/): void {
 	app.component("vx-virtual-list", VirtualList);
 }
 
-declare module "@vue/runtime-core" {
-	export interface ComponentCustomProperties {
-		$vx: VxLib,
-	}
-	export interface GlobalComponents {
-		"vx-app": typeof VxApp,
-
-		"vx-accordeon": typeof Accordeon,
-		"vx-bar": typeof Bar,
-		"vx-button": typeof Button,
-		"vx-column": typeof Column,
-		"vx-container": typeof Container,
-		"vx-dialog": typeof Dialog,
-		"vx-drawer": typeof Drawer,
-		"vx-dropdown": typeof Dropdown,
-		"vx-float": typeof Float,
-		"vx-icon": typeof Icon,
-		"vx-image": typeof Image,
-		"vx-input": typeof Input,
-		"vx-modal": typeof Modal,
-		"vx-row": typeof Row,
-		"vx-spacer": typeof Spacer,
-		"vx-text": typeof Text,
-		"vx-timeline": typeof Timeline,
-		"vx-toast": typeof Toast,
-		"vx-virtual-grid": typeof VirtualGrid,
-		"vx-virtual-list": typeof VirtualList,
-	}
-}
-
-
 // const install: vue.PluginInstallFunction = function
