@@ -160,18 +160,26 @@
 .vx-put-right { right: 0; }
 .vx-put-center { top: 0; right: 0; bottom: 0; left: 0; margin: auto; }
 
-.vx-background { background: var(--vx-theme-background2); }
-.vx-background-0 { background: var(--vx-theme-background0); }
-.vx-background-1 { background: var(--vx-theme-background1); }
-.vx-background-2 { background: var(--vx-theme-background2); }
-.vx-background-3 { background: var(--vx-theme-background3); }
-.vx-background-4 { background: var(--vx-theme-background4); }
+.vx-background { background: var(--vx-theme-background2)!important; }
+.vx-background-0 { background: var(--vx-theme-background0)!important; }
+.vx-background-1 { background: var(--vx-theme-background1)!important; }
+.vx-background-2 { background: var(--vx-theme-background2)!important; }
+.vx-background-3 { background: var(--vx-theme-background3)!important; }
+.vx-background-4 { background: var(--vx-theme-background4)!important; }
+.vx-background-disabled { background: var(--vx-theme-disabled)!important; }
+.vx-background-success { background: var(--vx-theme-success)!important; }
+.vx-background-danger { background: var(--vx-theme-danger)!important; }
+.vx-background-warning { background: var(--vx-theme-warning)!important; }
 
-.vx-text-0 { color: var(--vx-theme-color0); }
-.vx-text-1 { color: var(--vx-theme-color1); }
-.vx-text-2 { color: var(--vx-theme-color2); }
-.vx-text-3 { color: var(--vx-theme-color3); }
-.vx-text-4 { color: var(--vx-theme-color4); }
+.vx-text-0 { color: var(--vx-theme-color0)!important; }
+.vx-text-1 { color: var(--vx-theme-color1)!important; }
+.vx-text-2 { color: var(--vx-theme-color2)!important; }
+.vx-text-3 { color: var(--vx-theme-color3)!important; }
+.vx-text-4 { color: var(--vx-theme-color4)!important; }
+.vx-text-disabled { color: var(--vx-theme-disabled)!important; }
+.vx-text-success { color: var(--vx-theme-success)!important; }
+.vx-text-danger { color: var(--vx-theme-danger)!important; }
+.vx-text-warning { color: var(--vx-theme-warning)!important; }
 
 .vx-text-bold { font-weight: bold; }
 .vx-text-ellipsis {
