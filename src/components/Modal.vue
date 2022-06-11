@@ -85,7 +85,7 @@ export default class Modal extends VxVue {
 	max-height: 100%;
 	top: 0;
 	left: 0;
-	background: #00000066;
+	background: #000000BB;
 }
 
 .vx-elm-modal-inner {
