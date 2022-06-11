@@ -102,6 +102,10 @@ export default class VirtualGrid extends VxVue {
 
 	on_resize: any;
 
+	active: boolean = true;
+
+	should_rerender: boolean = false;
+
 	mounted(): void {
 		this.re_render();
 
@@ -113,7 +117,25 @@ export default class VirtualGrid extends VxVue {
 		window.removeEventListener("resize", this.on_resize);
 	}
 
+	deactivated(): void {
+		this.active = false;
+	}
+
+	activated(): void {
+		this.active = true;
+
+		if (this.should_rerender) {
+			this.should_rerender = false;
+			this.re_render();
+		}
+	}
+
 	re_render(): void {
+		if (!this.active) {
+			this.should_rerender = true;
+			return;
+		}
+
 		this.chunk_size = Math.round(this.$refs.root.clientWidth / this._width);
 		if (this.chunk_size === 0) this.chunk_size = 1;
 
