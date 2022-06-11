@@ -19,6 +19,7 @@ import Spacer from "./components/Spacer.vue";
 import Text from "./components/Text.vue";
 import Timeline from "./components/Timeline.vue";
 import Toast from "./components/Toast.vue";
+import Tooltip from "./components/Tooltip.vue";
 import VirtualGrid from "./components/VirtualGrid.vue";
 import VirtualList from "./components/VirtualList.vue";
 
@@ -47,6 +48,7 @@ declare module "@vue/runtime-core" {
 		"vx-text": typeof Text,
 		"vx-timeline": typeof Timeline,
 		"vx-toast": typeof Toast,
+		"vx-tooltip": typeof Tooltip,
 		"vx-virtual-grid": typeof VirtualGrid,
 		"vx-virtual-list": typeof VirtualList,
 	}

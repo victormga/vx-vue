@@ -25,6 +25,7 @@ import Spacer from "./components/Spacer.vue";
 import Text from "./components/Text.vue";
 import Timeline from "./components/Timeline.vue";
 import Toast from "./components/Toast.vue";
+import Tooltip from "./components/Tooltip.vue";
 import VirtualGrid from "./components/VirtualGrid.vue";
 import VirtualList from "./components/VirtualList.vue";
 
@@ -51,6 +52,7 @@ export default function(app: any /*vue.App<Element>*/): void {
 	app.component("vx-text", Text);
 	app.component("vx-timeline", Timeline);
 	app.component("vx-toast", Toast);
+	app.component("vx-tooltip", Tooltip);
 	app.component("vx-virtual-grid", VirtualGrid);
 	app.component("vx-virtual-list", VirtualList);
 }
